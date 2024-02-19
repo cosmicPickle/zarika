@@ -28,7 +28,14 @@
             border: 1px solid gray;
             margin:0 auto;
             display: flex;
-  justify-content: center;
+            justify-content: center;
+        }
+        #fontSizeSelection {
+            width: 90vw;
+            border: 1px solid gray;
+            margin:10px auto;
+            display: flex;
+            justify-content: center;
         }
         
     </style>
@@ -36,7 +43,7 @@
 <body>
 
     <textarea type="text" id="inputText" placeholder="Type something..." autofocus></textarea>
-    <div><label for="fontSize">Font Size: </label><input type="number" id="fontSize" value="15"/> vw
+    <div id="fontSizeSelection"><label for="fontSize">Font Size: </label><input type="number" id="fontSize" value="15"/> vw
     <div id="outputText" class="custom-font"></div>
 
     <script>
