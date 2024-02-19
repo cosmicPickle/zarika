@@ -1,1 +1,50 @@
-<h1>Hello!</h1>
+Zarika.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Text Display</title>
+    <style>
+        /* Embed your custom font */
+        @font-face {
+            font-family: 'Zarika';
+            src: url('https://cosmicpickle.github.io/zarika/Zarika.otf');
+        }
+        /* Use the custom font */
+        .custom-font {
+            font-family: 'Zarika', sans-serif;
+            font-size: 15vw;
+            width: 100vw;
+            height: 800px;
+            overflow-x: none;
+            overflow-y: scroll;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            display: block;
+        }
+        #inputText {
+        	width: 90vw;
+            height: 200px;
+            border: 1px solid gray;
+            margin:0 auto;
+            display: flex;
+  justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <textarea type="text" id="inputText" placeholder="Type something..." autofocus></textarea>
+    <div id="outputText" class="custom-font"></div>
+
+    <script>
+        // JavaScript for real-time text update
+        document.getElementById('inputText').addEventListener('input', function() {
+            document.getElementById('outputText').textContent = this.value;
+        });
+    </script>
+
+</body>
+</html>
