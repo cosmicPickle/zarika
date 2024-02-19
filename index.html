@@ -36,10 +36,14 @@
 <body>
 
     <textarea type="text" id="inputText" placeholder="Type something..." autofocus></textarea>
+    <div><label for="fontSize">Font Size: </label><input type="number" id="fontSize" value="15"/> vw
     <div id="outputText" class="custom-font"></div>
 
     <script>
         // JavaScript for real-time text update
+        document.getElementById('fontSize').addEventListener('change', function() {
+            document.getElementById("outputText").style.fontSize =  document.getElementById('fontSize').value + "vw";
+        });
         document.getElementById('inputText').addEventListener('input', function() {
             document.getElementById('outputText').textContent = this.value;
         });
