@@ -20,7 +20,8 @@
             overflow-y: scroll;
             text-overflow: ellipsis;
             word-wrap: break-word;
-            display: block;
+            display: flex;
+            justify-content: center;
         }
         #inputText {
         	width: 90vw;
@@ -43,7 +44,7 @@
 <body>
 
     <textarea type="text" id="inputText" placeholder="Type something..." autofocus></textarea>
-    <div id="fontSizeSelection"><label for="fontSize">Font Size: </label><input type="number" id="fontSize" value="15"/> vw
+    <div id="fontSizeSelection"><label for="fontSize">Font Size: </label><input type="number" id="fontSize" value="15"/> vw </div>
     <div id="outputText" class="custom-font"></div>
 
     <script>
