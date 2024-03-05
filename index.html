@@ -278,7 +278,6 @@
             
             var letters = document.getElementsByClassName("letters");
             var fontSize = document.getElementById('fontSize').value;
-            var fontSiz
             
             for (var i = 0; i < letters.length; i++) {
                 letters[i].style.fontSize = fontSize + 'vw';
@@ -288,7 +287,7 @@
             for (var i = 0; i < lines.length; i++) {
                 if(lines[i].classList.contains("long")) continue;
                 
-                lines[i].style.width = ((fontSize * 2) + 1) + 'vw';
+                lines[i].style.width = lines[i].style.scrollWidth;
             }
             
             document.getElementById("outputText").style.fontSize = fontSize + 'vw';
