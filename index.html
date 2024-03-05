@@ -43,7 +43,7 @@
             display: flex;
             justify-content: left;
         }
-        .lettets {
+        #lettets {
             width: 90vw;
             margin: 0 auto;
             display: flex;
@@ -51,7 +51,7 @@
             text-align: left;
             font-size: 5vw;
         }
-        .letters span {
+        #letters span {
             padding: 5px 10px;
         }
         .zarika {
@@ -83,7 +83,7 @@
         // JavaScript for real-time text update
         document.getElementById('fontSize').addEventListener('input', function() {
             document.getElementById("outputText").style.fontSize =  document.getElementById('fontSize').value + "vw";
-             document.getElementByClassName("letters").style.fontSize =  document.getElementById('fontSize').value + "vw";
+             document.getElementById("letters").style.fontSize =  document.getElementById('fontSize').value + "vw";
         });
         document.getElementById('inputText').addEventListener('input', function() {
             document.getElementById('outputText').textContent = this.value;
