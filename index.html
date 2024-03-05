@@ -53,9 +53,9 @@
             font-size: 5vw;
         }
         .letters .line {
-            width: 5vw;
+            width: 11vw;
             background: #F0F0F0;
-            margin: 0 5px;
+            margin: 5 5px;
         }
          .letters .line.long {
             width: 100%;
@@ -280,12 +280,21 @@
         document.getElementById('fontSize').addEventListener('input', function() {
             
             var letters = document.getElementsByClassName("letters");
-            var fontSize = document.getElementById('fontSize').value + "vw";
+            var fontSize = document.getElementById('fontSize').value;
+            var fontSiz
             
             for (var i = 0; i < letters.length; i++) {
-                letters[i].style.fontSize = fontSize;
+                letters[i].style.fontSize = fontSize + 'vw';
             }
-            document.getElementById("outputText").style.fontSize =  fontSize;
+            
+            var lines = document.getElementsByClassName("line");
+            for (var i = 0; i < lines.length; i++) {
+                if(lines[i].classList.contains("long")) continue;
+                
+                lines[i].style.width = ((fontSize * 2) + 1) + 'vw';
+            }
+            
+            document.getElementById("outputText").style.fontSize = fontSize + 'vw';
         });
         document.getElementById('inputText').addEventListener('input', function() {
             document.getElementById('outputText').textContent = this.value;
