@@ -274,7 +274,7 @@
 
     <script>
         // JavaScript for real-time text update
-        document.getElementById('fontSize').addEventListener('input', function() {
+        var UpdateFontSize = function() {
             
             var letters = document.getElementsByClassName("letters");
             var fontSize = document.getElementById('fontSize').value;
@@ -291,7 +291,9 @@
             }
             
             document.getElementById("outputText").style.fontSize = fontSize + 'vw';
-        });
+        };
+        UpdateFontSize();
+        document.getElementById('fontSize').addEventListener('input', UpdateFontSize);
         document.getElementById('inputText').addEventListener('input', function() {
             document.getElementById('outputText').textContent = this.value;
         });
