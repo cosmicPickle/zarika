@@ -77,200 +77,272 @@
         <div id="fontSizeSelection"><label for="fontSize">Font Size: </label><input type="number" id="fontSize" value="5"/> vw </div>
         <h2> Transcribed text </h2>
         <div id="outputText" class="custom-font"></div>
-        <h2>Alphabet</h2>
-        <div class="letters">
-            <div class="line">
-                <div class="english">a</div><div class="zarika">a</div>
-                <div class="english">e</div><div class="zarika">e</div>
-                <div class="english">i</div><div class="zarika">i</div>
-                <div class="english">o</div><div class="zarika">o</div>
-                <div class="english">u</div><div class="zarika">u</div>
+        <div id="language">
+            <div class="controls">
+                <button class="prevSlide"> Prev </button>
+                <button class="nextSlide"> Next </button>
             </div>
-             <div class="line">
-                <div class="english">b</div><div class="zarika">b</div>
-                <div class="english">ba</div><div class="zarika">ba</div>
-                <div class="english">be</div><div class="zarika">be</div>
-                <div class="english">bi</div><div class="zarika">bi</div>
-                <div class="english">bo</div><div class="zarika">bo</div>
-                <div class="english">bu</div><div class="zarika">bu</div>
+            <div class="slide" id="alphabet">
+                <h2>Alphabet</h2>
+                <div class="letters">
+                    <div class="line">
+                        <div class="english">a</div><div class="zarika">a</div>
+                        <div class="english">e</div><div class="zarika">e</div>
+                        <div class="english">i</div><div class="zarika">i</div>
+                        <div class="english">o</div><div class="zarika">o</div>
+                        <div class="english">u</div><div class="zarika">u</div>
+                    </div>
+                     <div class="line">
+                        <div class="english">b</div><div class="zarika">b</div>
+                        <div class="english">ba</div><div class="zarika">ba</div>
+                        <div class="english">be</div><div class="zarika">be</div>
+                        <div class="english">bi</div><div class="zarika">bi</div>
+                        <div class="english">bo</div><div class="zarika">bo</div>
+                        <div class="english">bu</div><div class="zarika">bu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">d</div><div class="zarika">d</div>
+                        <div class="english">da</div><div class="zarika">da</div>
+                        <div class="english">de</div><div class="zarika">de</div>
+                        <div class="english">di</div><div class="zarika">di</div>
+                        <div class="english">do</div><div class="zarika">do</div>
+                        <div class="english">du</div><div class="zarika">du</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">f</div><div class="zarika">f</div>
+                        <div class="english">fa</div><div class="zarika">fa</div>
+                        <div class="english">fe</div><div class="zarika">fe</div>
+                        <div class="english">fi</div><div class="zarika">fi</div>
+                        <div class="english">fo</div><div class="zarika">fo</div>
+                        <div class="english">fu</div><div class="zarika">fu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">g</div><div class="zarika">g</div>
+                        <div class="english">ga</div><div class="zarika">ga</div>
+                        <div class="english">ge</div><div class="zarika">ge</div>
+                        <div class="english">gi</div><div class="zarika">gi</div>
+                        <div class="english">go</div><div class="zarika">go</div>
+                        <div class="english">gu</div><div class="zarika">gu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">h</div><div class="zarika">h</div>
+                        <div class="english">ha</div><div class="zarika">ha</div>
+                        <div class="english">he</div><div class="zarika">he</div>
+                        <div class="english">hi</div><div class="zarika">hi</div>
+                        <div class="english">ho</div><div class="zarika">ho</div>
+                        <div class="english">hu</div><div class="zarika">hu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">j</div><div class="zarika">j</div>
+                        <div class="english">ja</div><div class="zarika">ja</div>
+                        <div class="english">je</div><div class="zarika">je</div>
+                        <div class="english">ji</div><div class="zarika">ji</div>
+                        <div class="english">jo</div><div class="zarika">jo</div>
+                        <div class="english">ju</div><div class="zarika">ju</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">k</div><div class="zarika">k</div>
+                        <div class="english">ka</div><div class="zarika">ka</div>
+                        <div class="english">ke</div><div class="zarika">ke</div>
+                        <div class="english">ki</div><div class="zarika">ki</div>
+                        <div class="english">ko</div><div class="zarika">ko</div>
+                        <div class="english">ku</div><div class="zarika">ku</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">l</div><div class="zarika">l</div>
+                        <div class="english">la</div><div class="zarika">la</div>
+                        <div class="english">le</div><div class="zarika">le</div>
+                        <div class="english">li</div><div class="zarika">li</div>
+                        <div class="english">lo</div><div class="zarika">lo</div>
+                        <div class="english">lu</div><div class="zarika">lu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">lla</div><div class="zarika">lla</div>
+                        <div class="english">lle</div><div class="zarika">lle</div>
+                        <div class="english">lli</div><div class="zarika">lli</div>
+                        <div class="english">llo</div><div class="zarika">llo</div>
+                        <div class="english">llu</div><div class="zarika">llu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">m</div><div class="zarika">m</div>
+                        <div class="english">ma</div><div class="zarika">ma</div>
+                        <div class="english">me</div><div class="zarika">me</div>
+                        <div class="english">mi</div><div class="zarika">mi</div>
+                        <div class="english">mo</div><div class="zarika">mo</div>
+                        <div class="english">mu</div><div class="zarika">mu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">n</div><div class="zarika">n</div>
+                        <div class="english">na</div><div class="zarika">na</div>
+                        <div class="english">ne</div><div class="zarika">ne</div>
+                        <div class="english">ni</div><div class="zarika">ni</div>
+                        <div class="english">no</div><div class="zarika">no</div>
+                        <div class="english">nu</div><div class="zarika">nu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">nna</div><div class="zarika">nna</div>
+                        <div class="english">nne</div><div class="zarika">nne</div>
+                        <div class="english">nni</div><div class="zarika">nni</div>
+                        <div class="english">nno</div><div class="zarika">nno</div>
+                        <div class="english">nnu</div><div class="zarika">nnu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">p</div><div class="zarika">p</div>
+                        <div class="english">pa</div><div class="zarika">pa</div>
+                        <div class="english">pe</div><div class="zarika">pe</div>
+                        <div class="english">pi</div><div class="zarika">pi</div>
+                        <div class="english">po</div><div class="zarika">po</div>
+                        <div class="english">pu</div><div class="zarika">pu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">ppa</div><div class="zarika">ppa</div>
+                        <div class="english">ppe</div><div class="zarika">ppe</div>
+                        <div class="english">ppi</div><div class="zarika">ppi</div>
+                        <div class="english">ppo</div><div class="zarika">ppo</div>
+                        <div class="english">ppu</div><div class="zarika">ppu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">r</div><div class="zarika">r</div>
+                        <div class="english">ra</div><div class="zarika">ra</div>
+                        <div class="english">re</div><div class="zarika">re</div>
+                        <div class="english">ri</div><div class="zarika">ri</div>
+                        <div class="english">ro</div><div class="zarika">ro</div>
+                        <div class="english">ru</div><div class="zarika">ru</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">s</div><div class="zarika">s</div>
+                        <div class="english">sa</div><div class="zarika">sa</div>
+                        <div class="english">se</div><div class="zarika">se</div>
+                        <div class="english">si</div><div class="zarika">si</div>
+                        <div class="english">so</div><div class="zarika">so</div>
+                        <div class="english">su</div><div class="zarika">su</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">sh</div><div class="zarika">sh</div>
+                        <div class="english">sha</div><div class="zarika">sha</div>
+                        <div class="english">she</div><div class="zarika">she</div>
+                        <div class="english">shi</div><div class="zarika">shi</div>
+                        <div class="english">sho</div><div class="zarika">sho</div>
+                        <div class="english">shu</div><div class="zarika">shu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">t</div><div class="zarika">t</div>
+                        <div class="english">ta</div><div class="zarika">ta</div>
+                        <div class="english">te</div><div class="zarika">te</div>
+                        <div class="english">ti</div><div class="zarika">ti</div>
+                        <div class="english">to</div><div class="zarika">to</div>
+                        <div class="english">tu</div><div class="zarika">tu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">v</div><div class="zarika">v</div>
+                        <div class="english">va</div><div class="zarika">va</div>
+                        <div class="english">ve</div><div class="zarika">ve</div>
+                        <div class="english">vi</div><div class="zarika">vi</div>
+                        <div class="english">vo</div><div class="zarika">vo</div>
+                        <div class="english">vu</div><div class="zarika">vu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">y</div><div class="zarika">y</div>
+                        <div class="english">ya</div><div class="zarika">ya</div>
+                        <div class="english">ye</div><div class="zarika">ye</div>
+                        <div class="english">yi</div><div class="zarika">yi</div>
+                        <div class="english">yo</div><div class="zarika">yo</div>
+                        <div class="english">yu</div><div class="zarika">yu</div>
+                    </div>
+                    <div class="line">
+                        <div class="english">z</div><div class="zarika">z</div>
+                        <div class="english">za</div><div class="zarika">za</div>
+                        <div class="english">ze</div><div class="zarika">ze</div>
+                        <div class="english">zi</div><div class="zarika">zi</div>
+                        <div class="english">zo</div><div class="zarika">zo</div>
+                        <div class="english">zu</div><div class="zarika">zu</div>
+                    </div>
+                </div>
             </div>
-            <div class="line">
-                <div class="english">d</div><div class="zarika">d</div>
-                <div class="english">da</div><div class="zarika">da</div>
-                <div class="english">de</div><div class="zarika">de</div>
-                <div class="english">di</div><div class="zarika">di</div>
-                <div class="english">do</div><div class="zarika">do</div>
-                <div class="english">du</div><div class="zarika">du</div>
+            <div class="slide" id="specialCharacters">
+                <h2>Special Characters</h2>
+                <div class="letters">
+                    <div class="line long">
+                        <div class="english">bani</div>-<div class="zarika">bani</div>
+                        <div class="english">esh</div>-<div class="zarika">esh</div>
+                        <div class="english">ishi</div>-<div class="zarika">ishi</div>
+                        <div class="english">on</div>-<div class="zarika">on</div>
+                        <div class="english">ruo</div>-<div class="zarika">ruo</div>
+                        <div class="english">su-</div>-<div class="zarika">su-</div>
+                        <div class="english">tan</div>-<div class="zarika">tan</div>
+                        <div class="english">uppa</div>-<div class="zarika">uppa</div>
+                        <div class="english">uru</div>-<div class="zarika">uru</div>
+                        <div class="english">varu</div>-<div class="zarika">varu</div>
+                        <div class="english">yen</div>-<div class="zarika">yen</div>
+                        <div class="english">yeppa</div>-<div class="zarika">yeppa</div>
+                    </div> 
+                </div>
             </div>
-            <div class="line">
-                <div class="english">f</div><div class="zarika">f</div>
-                <div class="english">fa</div><div class="zarika">fa</div>
-                <div class="english">fe</div><div class="zarika">fe</div>
-                <div class="english">fi</div><div class="zarika">fi</div>
-                <div class="english">fo</div><div class="zarika">fo</div>
-                <div class="english">fu</div><div class="zarika">fu</div>
+            <div class="slide" id="VocabularyNouns">
+                <h2>Vocabulary - Nouns</h2>
+                <div class="letters">
+                    <div class="line">
+                        <div class="zarika">Tiru</div>-<div class="english">Tree</div>
+                        <div class="zarika">Vizelna</div>-<div class="english">Surroundings</div>
+                        <div class="zarika">Kivu</div>-<div class="english">Water</div>
+                        <div class="zarika">Kivu-bala</div>-<div class="english">River</div>
+                        <div class="zarika">Kivu-beha</div>-<div class="english">Lake</div>
+                        <div class="zarika">Kivu-miplo</div>-<div class="english">Ocean or Sea</div>
+                    </div>
+                    <div class="line">
+                        <div class="zarika">Gile</div>-<div class="english">Star</div>
+                        <div class="zarika">Dunek</div>-<div class="english">Mountain</div>
+                        <div class="zarika">Helik</div>-<div class="english">Book</div>
+                        <div class="zarika">Firu</div>-<div class="english">Animal</div>
+                        <div class="zarika">Fiza</div>-<div class="english">Bird</div>
+                        <div class="zarika">Goru</div>-<div class="english">Stone</div>
+                        </div>
+                    <div class="line">
+                        <div class="zarika">Zeli</div>-<div class="english">Flower</div>
+                        <div class="zarika">Torek</div>-<div class="english">Night (noun); To sleep (verb)</div>
+                        <div class="zarika">Rilu</div>-<div class="english">Wind</div>
+                        <div class="zarika">Tenu</div>-<div class="english">Light (as in lightweight)</div>
+                        <div class="zarika">Lari</div>-<div class="english">All/Whole</div>
+                        <div class="zarika">Serenlari</div>-<div class="english">Peace</div>
+                    </div>
+                    <div class="line">
+                        <div class="zarika">Zarkesh</div>-<div class="english">World</div>
+                        <div class="zarika">Irek</div>-<div class="english">Pattern</div>
+                        <div class="zarika">Gilirek</div>-<div class="english">Constellation</div>
+                        <div class="zarika">Osha</div>-<div class="english">Path</div>
+                        <div class="zarika">Oshafaru</div>-<div class="english">Pathseeker</div>
+                        <div class="zarika">Oappi</div>-<div class="english">Spirit</div>
+                    </div>
+                    <div class="line">
+                        <div class="zarika">Zeki</div>-<div class="english">Person</div>
+                        <div class="zarika">Annon</div>-<div class="english">Existence, way of life</div>
+                        <div class="zarika">Annoneshi</div>-<div class="english">Coexistence</div>
+                        <div class="zarika">Ubueshi</div>-<div class="english">Infinity/Space (as in Cosmos)</div>
+                        <div class="zarika">Nika</div>-<div class="english">Empty</div>
+                        <div class="zarika">Baenna</div>-<div class="english">Nature</div>
+                    </div>
+                    <div class="line">
+                        <div class="zarika">Gahiye</div>-<div class="english">Expansion/Addition</div>
+                        <div class="zarika">Baennagahiye</div>-<div class="english">Nature's expansion (Zarika technology)</div>
+                        <div class="zarika">Taue</div>-<div class="english">A Cosmic String that makes up reality</div>
+                        <div class="zarika">Kiye</div>-<div class="english">Device</div>
+                        <div class="zarika">Kiyetaue</div>-<div class="english">Core of Zarika technology (device tuned to cosmic strings)</div>
+                        <div class="zarika">Tivulari</div>-<div class="english">Forest</div>
+                    </div>
+                    <div class="line">
+                        <div class="zarika">Nae</div>-<div class="english">Thing</div>
+                        <div class="zarika">Larinae</div>-<div class="english">Everything</div>
+                        <div class="zarika">Balloye</div>-<div class="english">Change</div>
+                        <div class="zarika">Yunu</div>-<div class="english">End</div>
+                    </div>
+                </div>
             </div>
-            <div class="line">
-                <div class="english">g</div><div class="zarika">g</div>
-                <div class="english">ga</div><div class="zarika">ga</div>
-                <div class="english">ge</div><div class="zarika">ge</div>
-                <div class="english">gi</div><div class="zarika">gi</div>
-                <div class="english">go</div><div class="zarika">go</div>
-                <div class="english">gu</div><div class="zarika">gu</div>
-            </div>
-            <div class="line">
-                <div class="english">h</div><div class="zarika">h</div>
-                <div class="english">ha</div><div class="zarika">ha</div>
-                <div class="english">he</div><div class="zarika">he</div>
-                <div class="english">hi</div><div class="zarika">hi</div>
-                <div class="english">ho</div><div class="zarika">ho</div>
-                <div class="english">hu</div><div class="zarika">hu</div>
-            </div>
-            <div class="line">
-                <div class="english">j</div><div class="zarika">j</div>
-                <div class="english">ja</div><div class="zarika">ja</div>
-                <div class="english">je</div><div class="zarika">je</div>
-                <div class="english">ji</div><div class="zarika">ji</div>
-                <div class="english">jo</div><div class="zarika">jo</div>
-                <div class="english">ju</div><div class="zarika">ju</div>
-            </div>
-            <div class="line">
-                <div class="english">k</div><div class="zarika">k</div>
-                <div class="english">ka</div><div class="zarika">ka</div>
-                <div class="english">ke</div><div class="zarika">ke</div>
-                <div class="english">ki</div><div class="zarika">ki</div>
-                <div class="english">ko</div><div class="zarika">ko</div>
-                <div class="english">ku</div><div class="zarika">ku</div>
-            </div>
-            <div class="line">
-                <div class="english">l</div><div class="zarika">l</div>
-                <div class="english">la</div><div class="zarika">la</div>
-                <div class="english">le</div><div class="zarika">le</div>
-                <div class="english">li</div><div class="zarika">li</div>
-                <div class="english">lo</div><div class="zarika">lo</div>
-                <div class="english">lu</div><div class="zarika">lu</div>
-            </div>
-            <div class="line">
-                <div class="english">lla</div><div class="zarika">lla</div>
-                <div class="english">lle</div><div class="zarika">lle</div>
-                <div class="english">lli</div><div class="zarika">lli</div>
-                <div class="english">llo</div><div class="zarika">llo</div>
-                <div class="english">llu</div><div class="zarika">llu</div>
-            </div>
-            <div class="line">
-                <div class="english">m</div><div class="zarika">m</div>
-                <div class="english">ma</div><div class="zarika">ma</div>
-                <div class="english">me</div><div class="zarika">me</div>
-                <div class="english">mi</div><div class="zarika">mi</div>
-                <div class="english">mo</div><div class="zarika">mo</div>
-                <div class="english">mu</div><div class="zarika">mu</div>
-            </div>
-            <div class="line">
-                <div class="english">n</div><div class="zarika">n</div>
-                <div class="english">na</div><div class="zarika">na</div>
-                <div class="english">ne</div><div class="zarika">ne</div>
-                <div class="english">ni</div><div class="zarika">ni</div>
-                <div class="english">no</div><div class="zarika">no</div>
-                <div class="english">nu</div><div class="zarika">nu</div>
-            </div>
-            <div class="line">
-                <div class="english">nna</div><div class="zarika">nna</div>
-                <div class="english">nne</div><div class="zarika">nne</div>
-                <div class="english">nni</div><div class="zarika">nni</div>
-                <div class="english">nno</div><div class="zarika">nno</div>
-                <div class="english">nnu</div><div class="zarika">nnu</div>
-            </div>
-            <div class="line">
-                <div class="english">p</div><div class="zarika">p</div>
-                <div class="english">pa</div><div class="zarika">pa</div>
-                <div class="english">pe</div><div class="zarika">pe</div>
-                <div class="english">pi</div><div class="zarika">pi</div>
-                <div class="english">po</div><div class="zarika">po</div>
-                <div class="english">pu</div><div class="zarika">pu</div>
-            </div>
-            <div class="line">
-                <div class="english">ppa</div><div class="zarika">ppa</div>
-                <div class="english">ppe</div><div class="zarika">ppe</div>
-                <div class="english">ppi</div><div class="zarika">ppi</div>
-                <div class="english">ppo</div><div class="zarika">ppo</div>
-                <div class="english">ppu</div><div class="zarika">ppu</div>
-            </div>
-            <div class="line">
-                <div class="english">r</div><div class="zarika">r</div>
-                <div class="english">ra</div><div class="zarika">ra</div>
-                <div class="english">re</div><div class="zarika">re</div>
-                <div class="english">ri</div><div class="zarika">ri</div>
-                <div class="english">ro</div><div class="zarika">ro</div>
-                <div class="english">ru</div><div class="zarika">ru</div>
-            </div>
-            <div class="line">
-                <div class="english">s</div><div class="zarika">s</div>
-                <div class="english">sa</div><div class="zarika">sa</div>
-                <div class="english">se</div><div class="zarika">se</div>
-                <div class="english">si</div><div class="zarika">si</div>
-                <div class="english">so</div><div class="zarika">so</div>
-                <div class="english">su</div><div class="zarika">su</div>
-            </div>
-            <div class="line">
-                <div class="english">sh</div><div class="zarika">sh</div>
-                <div class="english">sha</div><div class="zarika">sha</div>
-                <div class="english">she</div><div class="zarika">she</div>
-                <div class="english">shi</div><div class="zarika">shi</div>
-                <div class="english">sho</div><div class="zarika">sho</div>
-                <div class="english">shu</div><div class="zarika">shu</div>
-            </div>
-            <div class="line">
-                <div class="english">t</div><div class="zarika">t</div>
-                <div class="english">ta</div><div class="zarika">ta</div>
-                <div class="english">te</div><div class="zarika">te</div>
-                <div class="english">ti</div><div class="zarika">ti</div>
-                <div class="english">to</div><div class="zarika">to</div>
-                <div class="english">tu</div><div class="zarika">tu</div>
-            </div>
-            <div class="line">
-                <div class="english">v</div><div class="zarika">v</div>
-                <div class="english">va</div><div class="zarika">va</div>
-                <div class="english">ve</div><div class="zarika">ve</div>
-                <div class="english">vi</div><div class="zarika">vi</div>
-                <div class="english">vo</div><div class="zarika">vo</div>
-                <div class="english">vu</div><div class="zarika">vu</div>
-            </div>
-            <div class="line">
-                <div class="english">y</div><div class="zarika">y</div>
-                <div class="english">ya</div><div class="zarika">ya</div>
-                <div class="english">ye</div><div class="zarika">ye</div>
-                <div class="english">yi</div><div class="zarika">yi</div>
-                <div class="english">yo</div><div class="zarika">yo</div>
-                <div class="english">yu</div><div class="zarika">yu</div>
-            </div>
-            <div class="line">
-                <div class="english">z</div><div class="zarika">z</div>
-                <div class="english">za</div><div class="zarika">za</div>
-                <div class="english">ze</div><div class="zarika">ze</div>
-                <div class="english">zi</div><div class="zarika">zi</div>
-                <div class="english">zo</div><div class="zarika">zo</div>
-                <div class="english">zu</div><div class="zarika">zu</div>
+            <div class="controls">
+                <button class="prevSlide"> Prev </button>
+                <button class="nextSlide"> Next </button>
             </div>
         </div>
     </div>
-    <h2>Special Characters</h2>
-    <div class="letters">
-        <div class="line long">
-            <div class="english">bani</div>-<div class="zarika">bani</div>
-            <div class="english">esh</div>-<div class="zarika">esh</div>
-            <div class="english">ishi</div>-<div class="zarika">ishi</div>
-            <div class="english">on</div>-<div class="zarika">on</div>
-            <div class="english">ruo</div>-<div class="zarika">ruo</div>
-            <div class="english">su-</div>-<div class="zarika">su-</div>
-            <div class="english">tan</div>-<div class="zarika">tan</div>
-            <div class="english">uppa</div>-<div class="zarika">uppa</div>
-            <div class="english">uru</div>-<div class="zarika">uru</div>
-            <div class="english">varu</div>-<div class="zarika">varu</div>
-            <div class="english">yen</div>-<div class="zarika">yen</div>
-            <div class="english">yeppa</div>-<div class="zarika">yeppa</div>
-        </div> 
-    </div>
-
     <script>
         // JavaScript for real-time text update
         var UpdateFontSize = function() {
@@ -283,7 +355,33 @@
             }
             document.getElementById("outputText").style.fontSize = fontSize + 'vw';
         };
+        var slides = document.getElementsByClassName("slides");
+        var slideId = 0;
+        var ChangeSlide = function() {
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slides[slideId].style.display = 'block';
+        }
+        var NextSlide = function() {
+            slideId++;
+            if(slideId >= slides.length) {
+                slideId = 0;
+            }
+            ChangeSlide();
+        }
+        var PrevSlide = function() {
+            slideId--;
+            if(slideId < 0)
+            {
+                slideId = slides.length - 1;
+            }
+            ChangeSlide();
+        }
+
+        ChangeSlide();
         UpdateFontSize();
+        
         document.getElementById('fontSize').addEventListener('input', UpdateFontSize);
         document.getElementById('inputText').addEventListener('input', function() {
             document.getElementById('outputText').textContent = this.value;
