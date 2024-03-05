@@ -86,8 +86,8 @@
         <div id="outputText" class="custom-font"></div>
         <div id="language">
             <div class="controls">
-                <button class="prevSlide" onclick="PrevSlide"> Prev </button>
-                <button class="nextSlide" onClick="NextSlide"> Next </button>
+                <button class="prevSlide" onclick="PrevSlide()"> Prev </button>
+                <button class="nextSlide" onClick="NextSlide()"> Next </button>
             </div>
             <div class="slide" id="alphabet">
                 <h2>Alphabet</h2>
@@ -383,10 +383,90 @@
                     </div>
                 </div>
             </div>
+
+            <div class="slide" id="vocabularyAdjectives">
+                <h2>Vocabulary - Adjectives</h2>
+                <div class="letters">
+                    <div class="line">
+                       <div class="zarika">Seren</div><div class="english">(Seren) Quiet</div>
+                       <div class="zarika">Vibrak</div><div class="english">(Vibrak) Bright</div>
+                       <div class="zarika">Kalek</div><div class="english">(Kalek) Small</div>
+                       <div class="zarika">Jorun</div><div class="english">(Jorun) Happy</div>
+                       <div class="zarika">Tuvak</div><div class="english">(Tuvak) Cold</div>
+                       <div class="zarika">Bala</div><div class="english">(Bala) Long</div>
+                    </div>
+                    <div class="line">
+                       <div class="zarika">Beha</div><div class="english">(Beha) Wide</div>
+                       <div class="zarika">Miplo</div><div class="english">(Miplo) Big</div>
+                       <div class="zarika">Liru</div><div class="english">(Liru) Soft</div>
+                       <div class="zarika">Jazi</div><div class="english">(Jazi) New</div>
+                       <div class="zarika">Reno</div><div class="english">(Reno) Bright (as in intelligent)</div>
+                       <div class="zarika">Tumo</div><div class="english">(Tumo) Strong</div>
+                    </div>
+                    <div class="line">
+                       <div class="zarika">Feno</div><div class="english">(Feno) Quick</div>
+                       <div class="zarika">Suvil</div><div class="english">(Suvil) Swift</div>
+                       <div class="zarika">Lenik</div><div class="english">(Lenik) Gentle</div>
+                       <div class="zarika">Haruk</div><div class="english">(Haruk) Loud</div>
+                       <div class="zarika">Zelok</div><div class="english">(Zelok) Slow</div>
+                       <div class="zarika">Mirek</div><div class="english">(Mirek) Careful</div>
+                    </div>
+                    <div class="line">
+                       <div class="zarika">Sarunak</div><div class="english">(Sarunak) Harmonious, In tune with</div>
+                       <div class="zarika">Vunalek</div><div class="english">(Vunalek) Ethereal</div>
+                       <div class="zarika">Areppo</div><div class="english">(Areppo) Deep</div>
+                       <div class="zarika">Oappizeki</div><div class="english">(Oappizeki) Spiritual</div>
+                       <div class="zarika">Iyeho</div><div class="english">(Iyeho) Common</div>
+                       <div class="zarika">Obueshifaru</div><div class="english">(Obueshifaru) Inevitable</div>
+                    </div>
+                    <div class="line">
+                       <div class="zarika">Bayunu</div><div class="english">(Bayunu) Final</div>
+                       <div class="zarika">Oshadelu</div><div class="english">(Oshadelu) Irrevocable</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" id="vocabularyAdverbs">
+                <h2>Vocabulary - Adverbs</h2>
+                <div class="letters">
+                    <div class="line">
+                       <div class="zarika">Onseren</div><div class="english">(Onseren) Quietly</div>
+                       <div class="zarika">Onvibrak</div><div class="english">(Onvibrak) Brightly</div>
+                       <div class="zarika">Onkalek</div><div class="english">(Onkalek) Minutely</div>
+                       <div class="zarika">Onjorun</div><div class="english">(Onjorun) Happily</div>
+                       <div class="zarika">Ontuvak</div><div class="english">(Ontuvak) Coldly</div>
+                       <div class="zarika">Onbala</div><div class="english">(Onbala) Lengthily</div>
+                    </div>
+                    <div class="line">
+                       <div class="zarika">Onbeha</div><div class="english">(Onbeha) Widely</div>
+                       <div class="zarika">Onmiplo</div><div class="english">(Onmiplo) Grandly</div>
+                       <div class="zarika">Onliru</div><div class="english">(Onliru) Softly</div>
+                       <div class="zarika">Onjazi</div><div class="english">(Onjazi) Newly</div>
+                       <div class="zarika">Onreno</div><div class="english">(Onreno) Cleverly</div>
+                       <div class="zarika">Ontumo</div><div class="english">(Ontumo) Strongly</div>
+                    </div>
+                    <div class="line">
+                       <div class="zarika">Onfeno</div><div class="english">(Onfeno) Quickly</div>
+                       <div class="zarika">Onsuvil</div><div class="english">(Onsuvil) Swiftly</div>
+                       <div class="zarika">Onlenik</div><div class="english">(Onlenik) Gently</div>
+                       <div class="zarika">Onharuk</div><div class="english">(Onharuk) Loudly</div>
+                       <div class="zarika">Onzelok</div><div class="english">(Onzelok) Slowly</div>
+                       <div class="zarika">Onmirek</div><div class="english">(Onmirek) Carefully</div>
+                    </div>
+                    <div class="line">
+                       <div class="zarika">Onsarunak</div><div class="english">(Onsarunak) Harmoniously</div>
+                       <div class="zarika">Onvunalek</div><div class="english">(Onvunalek) Ethereally</div>
+                       <div class="zarika">Onareppo</div><div class="english">(Onareppo) Deeply</div>
+                       <div class="zarika">Onoappizeki</div><div class="english">(Onoappizeki) Spiritually</div>
+                    </div>
+                </div>
+            </div>
+
+
             
             <div class="controls">
-                <button class="prevSlide" onclick="PrevSlide"> Prev </button>
-                <button class="nextSlide" onClick="NextSlide"> Next </button>
+                <button class="prevSlide" onclick="PrevSlide()"> Prev </button>
+                <button class="nextSlide" onClick="NextSlide()"> Next </button>
             </div>
         </div>
     </div>
