@@ -10,12 +10,17 @@
             font-family: 'Zarika';
             src: url('https://cosmicpickle.github.io/zarika/Zarika-Regular.otf');
         }
+        .container {
+            width: 90vw;
+            display: flex;
+            justify-content: center;
+        }
         /* Use the custom font */
         .custom-font {
             font-family: 'Zarika', sans-serif;
             font-size: 15vw;
-            width: 100vw;
-            height: 800px;
+            width: 100%;
+            height: 200px;
             border: 1px solid gray;
             overflow-x: none;
             overflow-y: scroll;
@@ -25,10 +30,10 @@
             justify-content: center;
         }
         #inputText {
-        	width: 90vw;
+        	width:100%;
             height: 200px;
             border: 1px solid gray;
-            margin:0 auto;
+            margin: 10px auto;
             display: flex;
             justify-content: center;
         }
@@ -53,19 +58,21 @@
     </style>
 </head>
 <body>
-    <h1> Zarika Transcriber </h1>
-    <textarea type="text" id="inputText" placeholder="Type something..." autofocus></textarea>
-    <div id="fontSizeSelection"><label for="fontSize">Font Size: </label><input type="number" id="fontSize" value="15"/> vw </div>
-    <h2> Transcribed text </h2>
-    <div id="outputText" class="custom-font"></div>
-    <h2>Alphabet</h2>
-    <div id="letters">
-        <div class="line">
-            <span class="zarika">a</span><span class="english">a</span>
-            <span class="zarika">e</span><span class="english">e</span>
-            <span class="zarika">i</span><span class="english">i</span>
-            <span class="zarika">o</span><span class="english">o</span>
-            <span class="zarika">u</span><span class="english">u</span>
+    <div id="container">
+        <h1> Zarika Transcriber </h1>
+        <textarea type="text" id="inputText" placeholder="Type something..." autofocus></textarea>
+        <div id="fontSizeSelection"><label for="fontSize">Font Size: </label><input type="number" id="fontSize" value="15"/> vw </div>
+        <h2> Transcribed text </h2>
+        <div id="outputText" class="custom-font"></div>
+        <h2>Alphabet</h2>
+        <div id="letters">
+            <div class="line">
+                <span class="zarika">a</span><span class="english">a</span>
+                <span class="zarika">e</span><span class="english">e</span>
+                <span class="zarika">i</span><span class="english">i</span>
+                <span class="zarika">o</span><span class="english">o</span>
+                <span class="zarika">u</span><span class="english">u</span>
+            </div>
         </div>
     </div>
 
