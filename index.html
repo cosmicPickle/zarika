@@ -69,8 +69,11 @@
         }
         #language {
             background: #595959;
-            padding: 20px 0;
+            padding: 20px 20px;
             margin: 10px 0;
+        }
+        #language h2 {
+            background: #F0F0F0;
         }
     </style>
 </head>
@@ -83,8 +86,8 @@
         <div id="outputText" class="custom-font"></div>
         <div id="language">
             <div class="controls">
-                <button class="prevSlide"> Prev </button>
-                <button class="nextSlide"> Next </button>
+                <button class="prevSlide" onclick="PrevSlide"> Prev </button>
+                <button class="nextSlide" onClick="NextSlide"> Next </button>
             </div>
             <div class="slide" id="alphabet">
                 <h2>Alphabet</h2>
@@ -282,147 +285,108 @@
                     </div> 
                 </div>
             </div>
-            <div class="slide" id="VocabularyNouns">
+            
+            <div class="slide" id="vocabularyNouns">
                 <h2>Vocabulary - Nouns</h2>
                 <div class="letters">
                     <div class="line">
-                        <div class="zarika">Tiru</div><div class="english">Tree</div>
-                        <div class="zarika">Vizelna</div><div class="english">Surroundings</div>
-                        <div class="zarika">Kivu</div><div class="english">Water</div>
-                        <div class="zarika">Kivu-bala</div><div class="english">River</div>
-                        <div class="zarika">Kivu-beha</div><div class="english">Lake</div>
-                        <div class="zarika">Kivu-miplo</div><div class="english">Ocean or Sea</div>
+                        <div class="zarika">Tiru</div><div class="english">(Tiru) Tree</div>
+                        <div class="zarika">Vizelna</div><div class="english">(Vizelna) Surroundings</div>
+                        <div class="zarika">Kivu</div><div class="english">(Kivu) Water</div>
+                        <div class="zarika">Kivu-bala</div><div class="english">(Kivu-bala) River</div>
+                        <div class="zarika">Kivu-beha</div><div class="english">(Kivu-beha) Lake</div>
+                        <div class="zarika">Kivu-miplo</div><div class="english">(Kivu-miplo) Ocean or Sea</div>
                     </div>
                     <div class="line">
-                        <div class="zarika">Gile</div><div class="english">Star</div>
-                        <div class="zarika">Dunek</div><div class="english">Mountain</div>
-                        <div class="zarika">Helik</div><div class="english">Book</div>
-                        <div class="zarika">Firu</div><div class="english">Animal</div>
-                        <div class="zarika">Fiza</div><div class="english">Bird</div>
-                        <div class="zarika">Goru</div><div class="english">Stone</div>
-                        </div>
-                    <div class="line">
-                        <div class="zarika">Zeli</div><div class="english">Flower</div>
-                        <div class="zarika">Torek</div><div class="english">Night (noun); To sleep (verb)</div>
-                        <div class="zarika">Rilu</div><div class="english">Wind</div>
-                        <div class="zarika">Tenu</div><div class="english">Light (as in lightweight)</div>
-                        <div class="zarika">Lari</div><div class="english">All/Whole</div>
-                        <div class="zarika">Serenlari</div><div class="english">Peace</div>
+                        <div class="zarika">Gile</div><div class="english">(Gile) Star</div>
+                        <div class="zarika">Dunek</div><div class="english">(Dunek) Mountain</div>
+                        <div class="zarika">Helik</div><div class="english">(Helik) Book</div>
+                        <div class="zarika">Firu</div><div class="english">(Firu) Animal</div>
+                        <div class="zarika">Fiza</div><div class="english">(Fiza) Bird</div>
+                        <div class="zarika">Goru</div><div class="english">(Goru) Stone</div>
                     </div>
                     <div class="line">
-                        <div class="zarika">Zarkesh</div><div class="english">World</div>
-                        <div class="zarika">Irek</div><div class="english">Pattern</div>
-                        <div class="zarika">Gilirek</div><div class="english">Constellation</div>
-                        <div class="zarika">Osha</div><div class="english">Path</div>
-                        <div class="zarika">Oshafaru</div><div class="english">Pathseeker</div>
-                        <div class="zarika">Oappi</div><div class="english">Spirit</div>
+                        <div class="zarika">Zeli</div><div class="english">(Zeli) Flower</div>
+                        <div class="zarika">Torek</div><div class="english">(Torek) Night / To sleep</div>
+                        <div class="zarika">Rilu</div><div class="english">(Rilu) Wind</div>
+                        <div class="zarika">Tenu</div><div class="english">(Tenu) Light (as in lightweight)</div>
+                        <div class="zarika">Lari</div><div class="english">(Lari) All/whole</div>
+                        <div class="zarika">Serenlari</div><div class="english">(Serenlari) Peace</div>
                     </div>
                     <div class="line">
-                        <div class="zarika">Zeki</div><div class="english">Person</div>
-                        <div class="zarika">Annon</div><div class="english">Existence, way of life</div>
-                        <div class="zarika">Annoneshi</div><div class="english">Coexistence</div>
-                        <div class="zarika">Ubueshi</div><div class="english">Infinity/Space (as in Cosmos)</div>
-                        <div class="zarika">Nika</div><div class="english">Empty</div>
-                        <div class="zarika">Baenna</div><div class="english">Nature</div>
+                        <div class="zarika">Zarkesh</div><div class="english">(Zarkesh) World</div>
+                        <div class="zarika">Irek</div><div class="english">(Irek) Pattern</div>
+                        <div class="zarika">Gilirek</div><div class="english">(Gilirek) Constellation</div>
+                        <div class="zarika">Osha</div><div class="english">(Osha) Path</div>
+                        <div class="zarika">Oshafaru</div><div class="english">(Oshafaru) Pathseeker</div>
+                        <div class="zarika">Oappi</div><div class="english">(Oappi) Spirit</div>
                     </div>
                     <div class="line">
-                        <div class="zarika">Gahiye</div><div class="english">Expansion/Addition</div>
-                        <div class="zarika">Baennagahiye</div><div class="english">Nature's expansion (Zarika technology)</div>
-                        <div class="zarika">Taue</div><div class="english">A Cosmic String that makes up reality</div>
-                        <div class="zarika">Kiye</div><div class="english">Device</div>
-                        <div class="zarika">Kiyetaue</div><div class="english">Core of Zarika technology (device tuned to cosmic strings)</div>
-                        <div class="zarika">Tivulari</div><div class="english">Forest</div>
+                        <div class="zarika">Zeki</div><div class="english">(Zeki) Person</div>
+                        <div class="zarika">Annon</div><div class="english">(Annon) Existence, way of life</div>
+                        <div class="zarika">Annoneshi</div><div class="english">(Annoneshi) Coexistence</div>
+                        <div class="zarika">Ubueshi</div><div class="english">(Ubueshi) Infinity/Space (as in Cosmos)</div>
+                        <div class="zarika">Nika</div><div class="english">(Nika) Empty</div>
+                        <div class="zarika">Baenna</div><div class="english">(Baenna) Nature</div>
                     </div>
                     <div class="line">
-                        <div class="zarika">Nae</div><div class="english">Thing</div>
-                        <div class="zarika">Larinae</div><div class="english">Everything</div>
-                        <div class="zarika">Balloye</div><div class="english">Change</div>
-                        <div class="zarika">Yunu</div><div class="english">End</div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide" id="vocabularyVerbs">
-                <h2>Vocabulary - Verbs</h2>
-                <div class="letters">
-                    <div class="line">
-                       <div class="zarika">Yelu</div><div class="english">To run</div>
-                       <div class="zarika">Uazi</div><div class="english">To read</div>
-                       <div class="zarika">Zire</div><div class="english">To eat</div>
-                       <div class="zarika">Pilu</div><div class="english">To sing</div>
-                       <div class="zarika">Vahu</div><div class="english">To shine</div>
-                       <div class="zarika">Belo</div><div class="english">To flow</div>
+                        <div class="zarika">Gahiye</div><div class="english">(Gahiye) Expansion/addition</div>
+                        <div class="zarika">Baennagahiye</div><div class="english">(Baennagahiye) Nature’s expansion, Zarika technology</div>
+                        <div class="zarika">Taue</div><div class="english">(Taue) A Cosmic String that makes up reality</div>
+                        <div class="zarika">Kiye</div><div class="english">(Kiye) Device, art</div>
+                        <div class="zarika">Kiyetaue</div><div class="english">(Kiyetaue) Core of Zarika technology</div>
+                        <div class="zarika">Tivulari</div><div class="english">(Tivulari) Forest</div>
                     </div>
                     <div class="line">
-                       <div class="zarika">Kenu</div><div class="english">To fly</div>
-                       <div class="zarika">Rimo</div><div class="english">To laugh</div>
-                       <div class="zarika">Yelo</div><div class="english">To see</div>
-                       <div class="zarika">Pazi</div><div class="english">To create</div>
-                       <div class="zarika">Giro</div><div class="english">To hold</div>
-                       <div class="zarika">Saru</div><div class="english">To harmonize, to vibrate</div>
-                    </div>
-                    <div class="line">
-                       <div class="zarika">Zeliru</div><div class="english">To bloom, to flourish</div>
-                       <div class="zarika">Tivo</div><div class="english">To travel instantly</div>
-                       <div class="zarika">Faru</div><div class="english">To find/To seek</div>
-                       <div class="zarika">Aru</div><div class="english">To be</div>
-                       <div class="zarika">Enjiki</div><div class="english">To believe</div>
-                       <div class="zarika">Gahi</div><div class="english">To expand</div>
-                    </div>
-                    <div class="line">
-                       <div class="zarika">Delu</div><div class="english">To walk</div>
-                       <div class="zarika">Bemeri</div><div class="english">To talk</div>
-                       <div class="zarika">Ballo</div><div class="english">To change</div>
-                       <div class="zarika">Teholu</div><div class="english">To reach</div>
-                       <div class="zarika">Moyu</div><div class="english">To mean</div>
-                       <div class="zarika">Abuzeki</div><div class="english">To work</div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide" id="vocabularyAdjectives">
-                <h2>Vocabulary - Adjectives</h2>
-                <div class="letters">
-                    <div class="line">
-                       <div class="zarika">Seren</div><div class="english">Quiet</div>
-                       <div class="zarika">Vibrak</div><div class="english">Bright</div>
-                       <div class="zarika">Kalek</div><div class="english">Small</div>
-                       <div class="zarika">Jorun</div><div class="english">Happy</div>
-                       <div class="zarika">Tuvak</div><div class="english">Cold</div>
-                       <div class="zarika">Bala</div><div class="english">Long</div>
-                    </div>
-                    <div class="line">
-                       <div class="zarika">Beha</div><div class="english">Wide</div>
-                       <div class="zarika">Miplo</div><div class="english">Big</div>
-                       <div class="zarika">Liru</div><div class="english">Soft</div>
-                       <div class="zarika">Jazi</div><div class="english">New</div>
-                       <div class="zarika">Reno</div><div class="english">Bright (as in intelligent)</div>
-                       <div class="zarika">Tumo</div><div class="english">Strong</div>
-                    </div>
-                    <div class="line">
-                       <div class="zarika">Feno</div><div class="english">Quick</div>
-                       <div class="zarika">Suvil</div><div class="english">Swift</div>
-                       <div class="zarika">Lenik</div><div class="english">Gentle</div>
-                       <div class="zarika">Haruk</div><div class="english">Loud</div>
-                       <div class="zarika">Zelok</div><div class="english">Slow</div>
-                       <div class="zarika">Mirek</div><div class="english">Careful</div>
-                    </div>
-                    <div class="line">
-                       <div class="zarika">Sarunak</div><div class="english">Harmonious, In tune with</div>
-                       <div class="zarika">Vunalek</div><div class="english">Ethereal</div>
-                       <div class="zarika">Areppo</div><div class="english">Deep</div>
-                       <div class="zarika">Oappizeki</div><div class="english">Spiritual</div>
-                       <div class="zarika">Iyeho</div><div class="english">Common</div>
-                       <div class="zarika">Obueshifaru</div><div class="english">Inevitable</div>
-                    </div>
-                    <div class="line">
-                       <div class="zarika">Bayunu</div><div class="english">Final</div>
-                       <div class="zarika">Oshadelu</div><div class="english">Irrevocable</div>
+                        <div class="zarika">Nae</div><div class="english">(Nae) Thing</div>
+                        <div class="zarika">Larinae</div><div class="english">(Larinae) Everything</div>
+                        <div class="zarika">Balloye</div><div class="english">(Balloye) Change</div>
+                        <div class="zarika">Yunu</div><div class="english">(Yunu) End</div>
                     </div>
                 </div>
             </div>
 
+            <div class="slide" id="vocabularyVerbs">
+                <h2>Vocabulary - Verbs</h2>
+                <div class="letters">
+                    <div class="line">
+                       <div class="zarika">Yelu</div><div class="english">(Yelu) To run</div>
+                       <div class="zarika">Uazi</div><div class="english">(Uazi) To read</div>
+                       <div class="zarika">Zire</div><div class="english">(Zire) To eat</div>
+                       <div class="zarika">Pilu</div><div class="english">(Pilu) To sing</div>
+                       <div class="zarika">Vahu</div><div class="english">(Vahu) To shine</div>
+                       <div class="zarika">Belo</div><div class="english">(Belo) To flow</div>
+                    </div>
+                    <div class="line">
+                       <div class="zarika">Kenu</div><div class="english">(Kenu) To fly</div>
+                       <div class="zarika">Rimo</div><div class="english">(Rimo) To laugh</div>
+                       <div class="zarika">Yelo</div><div class="english">(Yelo) To see</div>
+                       <div class="zarika">Pazi</div><div class="english">(Pazi) To create</div>
+                       <div class="zarika">Giro</div><div class="english">(Giro) To hold</div>
+                       <div class="zarika">Saru</div><div class="english">(Saru) To harmonize, to vibrate</div>
+                    </div>
+                    <div class="line">
+                       <div class="zarika">Zeliru</div><div class="english">(Zeliru) To bloom, to flourish</div>
+                       <div class="zarika">Tivo</div><div class="english">(Tivo) To travel instantly</div>
+                       <div class="zarika">Faru</div><div class="english">(Faru) To find/To seek</div>
+                       <div class="zarika">Aru</div><div class="english">(Aru) To be</div>
+                       <div class="zarika">Enjiki</div><div class="english">(Enjiki) To believe</div>
+                       <div class="zarika">Gahi</div><div class="english">(Gahi) To expand</div>
+                    </div>
+                    <div class="line">
+                       <div class="zarika">Delu</div><div class="english">(Delu) To walk</div>
+                       <div class="zarika">Bemeri</div><div class="english">(Bemeri) To talk</div>
+                       <div class="zarika">Ballo</div><div class="english">(Ballo) To change</div>
+                       <div class="zarika">Teholu</div><div class="english">(Teholu) To reach</div>
+                       <div class="zarika">Moyu</div><div class="english">(Moyu) To mean</div>
+                       <div class="zarika">Abuzeki</div><div class="english">(Abuzeki) To work</div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="controls">
-                <button class="prevSlide"> Prev </button>
-                <button class="nextSlide"> Next </button>
+                <button class="prevSlide" onclick="PrevSlide"> Prev </button>
+                <button class="nextSlide" onClick="NextSlide"> Next </button>
             </div>
         </div>
     </div>
