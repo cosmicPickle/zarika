@@ -16,6 +16,7 @@
             font-size: 15vw;
             width: 100vw;
             height: 800px;
+            border: 1px solid gray;
             overflow-x: none;
             overflow-y: scroll;
             text-overflow: ellipsis;
@@ -34,23 +35,45 @@
         #fontSizeSelection {
             width: 25vw;
             border: 1px solid gray;
-            margin:10px auto;
             display: flex;
             justify-content: left;
+        }
+        .lettets {
+            width: 90vw;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex;
+            text-align: left;
+            font-size: 15vw;
+        }
+        .zarika {
+            font-family: 'Zarika', sans-serif;
         }
         
     </style>
 </head>
 <body>
-
+    <h1> Zarika Transcriber </h1>
     <textarea type="text" id="inputText" placeholder="Type something..." autofocus></textarea>
     <div id="fontSizeSelection"><label for="fontSize">Font Size: </label><input type="number" id="fontSize" value="15"/> vw </div>
+    <h2> Transcribed text </h2>
     <div id="outputText" class="custom-font"></div>
+    <h2>Alphabet</h2>
+    <div id="letters">
+        <div class="line">
+            <span class="zarika">a</span><span class="english">a</span>
+            <span class="zarika">e</span><span class="english">e</span>
+            <span class="zarika">i</span><span class="english">i</span>
+            <span class="zarika">o</span><span class="english">o</span>
+            <span class="zarika">u</span><span class="english">u</span>
+        </div>
+    </div>
 
     <script>
         // JavaScript for real-time text update
         document.getElementById('fontSize').addEventListener('input', function() {
             document.getElementById("outputText").style.fontSize =  document.getElementById('fontSize').value + "vw";
+             document.getElementByClassName("letters").style.fontSize =  document.getElementById('fontSize').value + "vw";
         });
         document.getElementById('inputText').addEventListener('input', function() {
             document.getElementById('outputText').textContent = this.value;
